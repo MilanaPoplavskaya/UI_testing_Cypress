@@ -1,0 +1,18 @@
+export const LOCATORS = {
+    input: '[id="searchInput"]',
+    search: '[id="applySearchBtn"]',
+    result: 'h1.searching-results__title',
+    menu: 'button.j-menu-burger-btn',
+    forWoman: 'a.menu-burger__main-list-link--306',
+    resultCloseForWoman: 'h1[class="catalog-title"]',
+    login: 'a.j-main-login',
+    loginInput: 'input[class="input-item"]',
+    delivery: 'a[data-wba-header-name="Free_delivery"]',
+    conditions: 'a.delivery-banner-btn',
+    information: '[id="terms-delivery"]',
+    address: 'input[placeholder="Введите адрес"]',
+    field: 'ymaps.ymaps-2-1-79-searchbox__normal-layout',
+    button: '[class="ymaps-2-1-79-searchbox-button-text"]',
+    addressButton: '[class="ymaps-2-1-79-searchbox-list-button"]',
+    exactLocation: 'ymaps.ymaps-2-1-79-islets_serp-item',
+};

@@ -1,0 +1,27 @@
+{
+  "name": "ui_testing_cypress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "npx cypress open",
+    "cypress:run": "npx cypress run"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MilanaPoplavskaya/UI_testing_Cypress.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MilanaPoplavskaya/UI_testing_Cypress/issues"
+  },
+  "homepage": "https://github.com/MilanaPoplavskaya/UI_testing_Cypress#readme",
+  "devDependencies": {
+    "@types/node": "^18.6.3",
+    "cypress": "^9.7.0",
+    "typescript": "^4.7.4"
+  }
+}
