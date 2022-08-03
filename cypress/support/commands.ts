@@ -1,4 +1,4 @@
-import { LOCATORS } from "../fixtures/locators";
+import { LOCATORS } from "../locators/locators";
 
 const {
     input, search, result, menu, forWoman, resultCloseForWoman, login, loginInput,

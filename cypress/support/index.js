@@ -1,2 +1,4 @@
-import './commands'
+import './commands';
+
+require("@shelex/cypress-allure-plugin");
 
