@@ -1,4 +1,5 @@
 import { EXPECTED_VALUE } from "../../fixtures/expectedValue";
+import {dress, city} from "../../fixtures/titles";
 
 const { requestFound, woman, deliveryInformation, exactAddress} = EXPECTED_VALUE;
 
@@ -7,7 +8,7 @@ describe("Wildberries.ru testing", () => {
         cy.visit("/");
     });
     it.only("Check input field", () => {
-        cy.SearchInWildberries(requestFound);
+        cy.SearchInWildberries(requestFound, dress);
     });
     it("Check menu-list", () => {
         cy.GetMainList(woman);
@@ -20,6 +21,6 @@ describe("Wildberries.ru testing", () => {
     });
     it("Check address selection", () => {
         cy.OrderDelivery(deliveryInformation);
-        cy.SelectAnAddress(exactAddress);
+        cy.SelectAnAddress(exactAddress, city);
     });
 });

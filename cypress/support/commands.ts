@@ -1,13 +1,12 @@
 import { LOCATORS } from "../fixtures/locators";
-import { dress, city } from "../fixtures/titles";
 
 const {
     input, search, result, menu, forWoman, resultCloseForWoman, login, loginInput,
     delivery, conditions, address, information, field, button, addressButton, exactLocation,
 } = LOCATORS;
 
-Cypress.Commands.add("SearchInWildberries", (expectedText: string): void => {
-    cy.get(input).type(dress);
+Cypress.Commands.add("SearchInWildberries", (expectedText: string, searchedText: string): void => {
+    cy.get(input).type(searchedText);
     cy.get(search).click();
     cy.get(result).should("have.text", expectedText);
 
@@ -26,8 +25,8 @@ Cypress.Commands.add("OrderDelivery", (text: string): void => {
     cy.get(conditions).click();
     cy.get(information).should("be.visible").and("contain", text);
 });
-Cypress.Commands.add("SelectAnAddress", (text: string): void => {
-    cy.get(address).first().type(city);
+Cypress.Commands.add("SelectAnAddress", (text: string, searchedText: string): void => {
+    cy.get(address).first().type(searchedText);
     cy.get(field).within(() => {
         cy.get(button).click();
     });

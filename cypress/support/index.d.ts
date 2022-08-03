@@ -1,6 +1,6 @@
 declare namespace Cypress {
     interface Chainable<Subject> {
-        SearchInWildberries(expectedText: string): void;
+        SearchInWildberries(expectedText: string, searchedText: string): void;
 
         GetMainList(text: string): void;
 
@@ -8,6 +8,6 @@ declare namespace Cypress {
 
         OrderDelivery(text: string): void;
 
-        SelectAnAddress(text: string): void;
+        SelectAnAddress(text: string, searchedText: string): void;
     }
 }
