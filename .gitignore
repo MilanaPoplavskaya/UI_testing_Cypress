@@ -3,3 +3,5 @@ node_modules/
 tsconfig.json
 .prettierrc
 allure-results/
+allure-report
+cypress/videos

@@ -7,7 +7,7 @@ describe("Wildberries.ru testing", () => {
     beforeEach("Open main page before each tests", () => {
         cy.visit("/");
     });
-    it.only("Check input field", () => {
+    it("Check input field", () => {
         cy.SearchInWildberries(requestFound, dress);
     });
     it("Check menu-list", () => {
