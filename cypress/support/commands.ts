@@ -6,7 +6,9 @@ const {
 } = LOCATORS;
 
 Cypress.Commands.add("SearchInWildberries", (expectedText: string, searchedText: string): void => {
+    cy.intercept("GET", "*onlinechatpopuptmpl-ru-ru.json*").as("request");
     cy.get(input).type(searchedText);
+    cy.wait("@request");
     cy.get(search).click();
     cy.get(result).should("have.text", expectedText);
 
